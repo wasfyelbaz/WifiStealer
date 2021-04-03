@@ -27,7 +27,7 @@ pip3 install cx_Freeze sendgrid
 
 ## Example
 
-![forthebadge made-with-python](Example.gif)
+[![Example](https://raw.githubusercontent.com/wasfyelbaz/WifiStealer/main/Example.gif)](https://raw.githubusercontent.com/wasfyelbaz/WifiStealer/main/Example.gif)
 
 Example of embedding the stealer with WinRAR installation.
 
