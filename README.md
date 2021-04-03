@@ -25,6 +25,12 @@ pip3 install cx_Freeze sendgrid
 * Faster than a lightening.
 * Undetectable from MS Windows Defender and many many AVs.
 
+## Example
+
+![forthebadge made-with-python](Example.gif)
+
+Example of embedding the stealer with WinRAR installation.
+
 ## Usage
 
    - SendGrid:
