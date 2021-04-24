@@ -5,6 +5,7 @@
 * Python3
   - cx_Freeze
   - sendgrid
+  - idna
   
 * MS Windows (Widnows 10 is preferable) 
 
@@ -13,7 +14,7 @@
 ```
 git clone https://github.com/wasfyelbaz/WifiStealer.git
 cd "WifiStealer"
-pip3 install cx_Freeze sendgrid
+pip3 install -r requirements.txt
 ```
 
 ## Features !

@@ -1,0 +1,8 @@
+cx-Freeze==6.6
+cx-Logging==3.0
+idna==3.1
+importlib-metadata==4.0.1
+python-http-client==3.3.2
+sendgrid==6.7.0
+starkbank-ecdsa==1.1.0
+zipp==3.4.1
